@@ -1,5 +1,6 @@
 const assertEqual = require('../assertEqual');
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
-assertEqual("Hello", "Hello");
-assertEqual(1, 3);
+eqArrays([1, 2, 3], [1, 2, 3]) // => true
+  eqArrays([1, 2, 3], [3, 2, 1])// => false
+  
+  eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+  eqArrays(["1", "2", "3"], ["1", "2", 3])// => false
