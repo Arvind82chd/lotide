@@ -1,18 +1,17 @@
 const without = function(source, itemToRemove) {
+
   for (let i = 0; i < itemToRemove.length; i++) {
-   const finalSource = [];
     for (let j = 0; j < source.length; j++) {
       if (itemToRemove[i] === source[j]) {
           source.splice(j, 1);
-          finalSource.push(source);
+          return source;
       } 
     } 
-    console.log(finalSource);
   }
-  //console.log(source);// return source elements that are not in itemToRemove
+
 }
-  without([1, 2, 3], [1]) // => [2, 3]
-  without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+  console.log(without([1, 2, 3], [1])) // => [2, 3]
+  console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
   
    //Test Code
   without(["Lighthouse Labs", "Bootcamp"],["Bootcamp"]);
