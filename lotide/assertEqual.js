@@ -7,11 +7,5 @@ const assertEqual = function(actual, expected) {
   //define two inputs
   //then compare
   // print
-
 };
-
-//Test Code
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
-assertEqual("Hello", "Hello");
-assertEqual(1, 3);
+module.exports = assertEqual;
