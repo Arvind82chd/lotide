@@ -7,9 +7,26 @@ const assertEqual = function(actual, expected) {
     
   };
 
-  const x = "Hi this is for testing";
-  console.log(x);
-  const countLetters = function () {
+  const string = "lighthouse in the house";
+  console.log(string);
+  const countLetters = function (string) {
+    let countObject = {};
+  
+  for (let letter of string) {
+    if (letter !== " ") {
+      if (countObject[letter]) {
+        countObject[letter] = countObject[letter] + 1;
+      }
+      else 
+      {
+        countObject[letter] = 1;
+      }
+    }
+    
+  }
+  return countObject
+  };
+/*
     let count = 1; // set count to 1 as letter already in string - from below
     for (let i = 0; i < x.length; i++) { // for dividing string into individual values
        // console.log(x[i]); // test above
@@ -32,5 +49,5 @@ const assertEqual = function(actual, expected) {
         
     }
     
- }
-  countLetters(x);
+ } */
+ console.log(countLetters(string));
