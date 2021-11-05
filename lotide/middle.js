@@ -1,3 +1,5 @@
+//const assertArrayEqual = require(./assertArrayEqual);
+//const eqArrays = require(./eqArray);
 const middle = function(array) {
   const i = array.length / 2;
  if (array.length % 2 === 0) {
