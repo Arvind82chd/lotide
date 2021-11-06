@@ -2,15 +2,12 @@ const sentence = "this is a good day.";
 console.log()
 const letterPositions = function(sentence) {
 const results = {};
-for (let letter in sentence) {
-if (results[letter]) {
-    console.log(letter);
-    results[letter] += 1;
-}
+for (let i = 0; i < sentence.length; i++) {
+   results = Object.keys(i); 
 // logic to update results here
-    return results;
+   // 
 }
-    
+return results;   
 };
 console.log(letterPositions(sentence));
 

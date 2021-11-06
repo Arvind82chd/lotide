@@ -13,7 +13,7 @@ const assertEqual = function(actual, expected) {
   
   for (let letter of string) {
     if (letter !== " ") {
-      if (countObject[letter]) {
+      if (countObject[letter]) { // condition to check if letter repeated.
         countObject[letter] += 1;
       }
       else 
