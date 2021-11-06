@@ -7,10 +7,10 @@ const assertEqual = function(actual, expected) {
 };
 
 
-const findKeyByValue = function (object, value) {
+const findKeyByValue = function (object, value) { // previous issue because of using {object} instead of object.
   const keysArray = Object.keys(object);
-    for (let key of keysArray) { 
-      if (object[key] === value) {
+    for (let key of keysArray) { // Clarity after refering a peer.
+      if (object[key] === value) { 
       return key;
     }
   }
@@ -25,7 +25,6 @@ const bestTVShowsByGenre = {
     comedy: "Brooklyn Nine-Nine",
     drama:  "The Wire"
   };
-  console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
   
   assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
   assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "drama");
