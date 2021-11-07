@@ -11,3 +11,20 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 assertObjectsEqual(results2); 
+
+
+/////// mocha & chai
+
+describe('Array', function() {
+    // Further code for tests goes here
+  });
+
+  var assert = chai.assert;
+
+  describe('Array', function() {
+    it('should start empty', function() {
+      var arr = [];
+  
+      assert.equal(arr.length, 0);
+    });
+  });
